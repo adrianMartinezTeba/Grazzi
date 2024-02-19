@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Moneta-Light';
+    src: url('../../../../src/scss/typography/moneta/monetaFiles/Moneta-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Moneta-Black';
+    src: url('../../../../src/scss/typography/moneta/monetaFiles/Moneta-Black.ttf');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Moneta-Bold';
+    src: url('../../../../src/scss/typography/moneta/monetaFiles/Moneta-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Moneta-Regular';
+    src: url('../../../../src/scss/typography/moneta/monetaFiles/Moneta-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+$Moneta-Light:'Moneta-Light';
+$Moneta-Black:'Moneta-Black';
+$Moneta-Bold:'Moneta-Bold';
+$Moneta-Regular:'Moneta-Regular';
+:export {
+    Moneta-Light: $Moneta-Light;
+    Moneta-Black: $Moneta-Black;
+    Moneta-Bold: $Moneta-Bold;
+    Moneta-Regular: $Moneta-Regular;
+}

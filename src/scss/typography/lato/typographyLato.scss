@@ -1,0 +1,70 @@
+//por orden alfabetico
+@font-face {
+    font-family: 'Lato-Black';
+    src: url('../../../../src/scss/typography/lato/latoFiles/Lato-Black.ttf');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato-Black-Italic';
+    src: url('../../../../src/scss/typography/lato/latoFiles/Lato-BlackItalic.ttf');
+    font-weight: 900;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('../../../../src/scss/typography/lato/latoFiles/Lato-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato-Bold-Italic';
+    src: url('../../../../src/scss/typography/lato/latoFiles/Lato-BoldItalic.ttf');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Lato-Italic';
+    src: url('../../../../src/scss/typography/lato/latoFiles/Lato-Italic.ttf');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato-Light';
+    src: url('../../../../src/scss/typography/lato/latoFiles/Lato-Light.ttf');
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('../../../../src/scss/typography/lato/latoFiles/Lato-Regular.ttf');
+    // src: local('./latoFiles/Lato-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato-Thin';
+    src: url('../../../../src/scss/typography/lato/latoFiles/Lato-Thin.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+$Lato-Black:'Lato-Black';
+$Lato-Bold:'Lato-Bold';
+$Lato-Regular:'Lato-Regular';
+$Lato-Light:'Lato-Light';
+$Lato-Thin:'Lato-Thin';
+$Lato-Italic:'Lato-Italic';
+$Lato-Black-Italic:'Lato-Black-Italic';
+$Lato-Bold-Italic:'Lato-Bold-Italic';
+
+:export {
+    Lato-Black: $Lato-Black;
+    Lato-Bold: $Lato-Bold;
+    Lato-Regular: $Lato-Regular;
+    Lato-Light: $Lato-Light;
+    Lato-Thin: $Lato-Thin;
+    Lato-Italic: $Lato-Italic;
+    Lato-Black-Italic: $Lato-Black-Italic;
+    Lato-Bold-Italic: $Lato-Bold-Italic;
+}

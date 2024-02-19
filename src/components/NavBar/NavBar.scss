@@ -1,0 +1,55 @@
+@import '../../scss/colors.scss';
+@import '../../scss/typography/lato/typographyLato.scss';
+@import '../../scss/typography/moneta/typographyMoneta.scss';
+.navbar-container {
+    position: absolute;
+    display: flex;
+    margin-left: 7.7vw;
+    margin-right: 7.7vw;
+    height: 13.8vh;
+    width: 84.6%;
+
+}
+
+.nav-leftContent {
+    display: flex;
+    align-items: center;
+    margin-left:3vw;
+ 
+   div{
+    .list-itemNB{
+        text-decoration: none;
+        color: white;
+        margin: 5px;
+        font-family: $Moneta-Regular;
+    }
+   }
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    // margin-left: 250px;
+}
+
+.nav-rightContent {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.transparent {
+    background-color: transparent;
+    ;
+}
+
+/* Estilos específicos para el fondo coloreado */
+.colored {
+    background-color: $carmin;
+    /* Reemplaza 'yourColor' con el color deseado */
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
