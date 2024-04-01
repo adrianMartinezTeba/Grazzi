@@ -38,6 +38,8 @@ const Proximamente = () => {
             clearTimeout(logoTimer);
             clearTimeout(titleTimer);
             clearTimeout(secondTextTimer);
+            clearTimeout(instagramTimer);
+            clearTimeout(hrTimer);
         };
     }, []);
 
