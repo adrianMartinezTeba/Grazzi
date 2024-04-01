@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Proximamente.scss';
-import logoCarmin from '../../../assets/logos/Logo_Grazzi_carmin.png';
+import logoBlanco from '../../../assets/logos/LogoGrazziBlanco.png';
 import { CiInstagram, CiFacebook } from "react-icons/ci";
 import { FaTiktok } from "react-icons/fa";
 
@@ -45,34 +45,36 @@ const Proximamente = () => {
 
     return (
         <div className='proximamente-container'>
-            <hr className={`proximamente-hr ${showHr ? 'show' : ''}`} /> {/* <hr> con nueva clase y estado */}
-            <img className={`proximamente-logo ${showLogo ? 'show' : ''}`} src={logoCarmin} alt="Logo de la empresa" />
-            <h3 className={`proximamente-title ${showTitle ? 'show' : ''}`}>
-                {titleText.split('').map((char, index) => (
-                    <span key={index} className={`${showTitle ? 'show' : ''}`}>
-                        {char}
-                    </span>
-                ))}
-            </h3>
-            <h3 className={`proximamente-secondText ${showSecondText ? 'show' : ''}`}>
-                {secondText.split('').map((char, index) => (
-                    <span key={index} className={`${showSecondText ? 'show' : ''}`}>
-                        {char}
-                    </span>
-                ))}
-            </h3>
-            <div className='proximamente-redes'>
-                <a href="https://www.instagram.com/" target='_blank'>
-                    <CiInstagram className={`proximamente-icon ${showInstagram ? 'show' : ''}`} />
-                </a>
-                <a href="https://www.facebook.com/" target='_blank'>
-                    <CiFacebook className={`proximamente-icon ${showInstagram ? 'show' : ''}`} />
-                </a>
-                <a href="https://www.tiktok.com/" target='_blank'>
-                    <FaTiktok className={`proximamente-icon ${showInstagram ? 'show' : ''}`} />
-                </a>
+            <hr className={`proximamente-hr1 ${showHr ? 'show' : ''}`} /> {/* <hr> con nueva clase y estado */}
+            <div className='proximamente-main-container'>
+                <img className={`proximamente-logo ${showLogo ? 'show' : ''}`} src={logoBlanco} alt="Logo de la empresa" />
+                <h3 className={`proximamente-title ${showTitle ? 'show' : ''}`}>
+                    {titleText.split('').map((char, index) => (
+                        <span key={index} className={`${showTitle ? 'show' : ''}`}>
+                            {char}
+                        </span>
+                    ))}
+                </h3>
+                <h3 className={`proximamente-secondText ${showSecondText ? 'show' : ''}`}>
+                    {secondText.split('').map((char, index) => (
+                        <span key={index} className={`${showSecondText ? 'show' : ''}`}>
+                            {char}
+                        </span>
+                    ))}
+                </h3>
+                <div className='proximamente-redes'>
+                    <a href="https://www.instagram.com/grazzi.es/?igsh=MWcxNnkwbjhiNGl6Mg%3D%3D&utm_source=qr" target='_blank'>
+                        <CiInstagram className={`proximamente-icon ${showInstagram ? 'show' : ''}`} />
+                    </a>
+                    <a href="https://www.facebook.com/people/Grazzi/61558214060852/" target='_blank'>
+                        <CiFacebook className={`proximamente-icon ${showInstagram ? 'show' : ''}`} />
+                    </a>
+                    <a href="https://www.tiktok.com/@grazzi.es?_t=8lAHVt7K53Y&_r=1" target='_blank'>
+                        <FaTiktok className={`proximamente-icon ${showInstagram ? 'show' : ''}`} />
+                    </a>
+                </div>
             </div>
-            <hr className={`proximamente-hr ${showHr ? 'show' : ''}`} /> {/* <hr> adicional */}
+            <hr className={`proximamente-hr2 ${showHr ? 'show' : ''}`} /> {/* <hr> adicional */}
         </div>
     );
 }
