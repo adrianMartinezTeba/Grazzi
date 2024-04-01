@@ -1,0 +1,132 @@
+@import '../../scss/colors.scss';
+@import '../../scss/typography/lato/typographyLato.scss';
+@import '../../scss/typography/moneta/typographyMoneta.scss';
+
+.footer-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px black;
+    height: 56vh;
+    width: 100%;
+    .footer-hr1 {
+        background-color: $carmin;
+        height: 0.5%;
+        width: 92%;
+    }
+
+    .footer-hr2 {
+        background-color: $carmin;
+        height: 0.2%;
+        width: 92%;
+    }
+}
+
+.footer-text {
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    color: $carmin;
+    height: 60%;
+    h2 {
+        font-size:  160%;
+        font-family: $Moneta-Bold;
+    }
+    p {
+        font-size:  120%;
+        font-family: $Lato-Light;
+        margin-top: 2%;
+    }
+    .footer-textList1 {
+        width: 100%;
+        height: 100%;
+        border: solid 1px black;
+        display: flex;
+        flex-direction: column;
+        font: size 120%;
+    }
+    .footer-textList2 {
+        width: 100%;
+        height: 100%;
+        border: solid 1px black;
+        display: flex;
+        flex-direction: column;
+        font: size 120%;
+    }
+
+    .footer-textList3 {
+        width: 100%;
+        height: 100%;
+        border: solid 1px black;
+        display: flex;
+        flex-direction: column;
+        font: size 120%;
+    }
+    .footer-textList4 {
+        width: 100%;
+        height: 100%;
+        border: solid 1px black;
+        display: flex;
+        flex-direction: column;
+        font: size 120%;
+    }
+}
+.footer-arrow{
+    height: 10%;
+    width: 100%;
+    border: solid 1px black;
+    background-color: $carmin;
+
+}
+.footer-arrow:hover {
+    background-color:white;
+}
+.footer-arrowUp {
+    border-radius: 50%;
+    background-color: $carmin;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    margin-right: 10%;
+
+    .arrow {
+        color: white;
+        width: 70%;
+        height: 70%;
+    }
+}
+
+.footer-icons {
+    width: 15%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footerIcon {
+    color: $carmin;
+    width: 30px;
+    height: 30px;
+}
+
+.footer-lastText {
+    color: $carmin;
+    width: 92%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    p {
+        display: flex;
+        align-items: center;
+        height: 50px;
+    }
+}

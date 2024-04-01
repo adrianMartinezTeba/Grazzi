@@ -1,37 +1,37 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import productService from "./productService";
+import userService from "./userService";
 
 const initialState = {
-    products: []
+    users: []
 };
-export const productSlice = createSlice({
-    name: "product",
+export const userSlice = createSlice({
+    name: "user",
     initialState,
     reducers: {
         reset: (state) => {
-            state.products = [];
+            state.users = [];
             
         },
     },
     extraReducers: (builder) => {
         builder
-            .addCase(getProducts.fulfilled, (state, action) => {
-                state.products = action.payload
+            .addCase(getUsers.fulfilled, (state, action) => {
+                state.users = action.payload
                 state.message = 'Usuarios obtenidos correctamente';
                 state.isSuccess = true
             })
-            .addCase(getProducts.pending, (state) => {
+            .addCase(getUsers.pending, (state) => {
                 state.isLoading = true;
             })
-            .addCase(getProducts.rejected, (state) => {
+            .addCase(getUsers.rejected, (state) => {
                 state.isError = true;
             })
     },
 });
-export const getProducts = createAsyncThunk("produ/getProducts ",
+export const getUsers = createAsyncThunk("user/getUsers ",
     async (thunkAPI) => {
         try {
-            return await productService.getProducts();
+            return await userService.getUsers();
         } catch (error) {
             console.error(error);
             return thunkAPI.rejectWithValue(message);
@@ -40,5 +40,5 @@ export const getProducts = createAsyncThunk("produ/getProducts ",
 
 );
 
-export const { reset } = productSlice.actions;
-export default productSlice.reducer;
+export const { reset } = userSlice.actions;
+export default userSlice.reducer;

@@ -2,54 +2,117 @@
 @import '../../scss/typography/lato/typographyLato.scss';
 @import '../../scss/typography/moneta/typographyMoneta.scss';
 .navbar-container {
-    position: absolute;
+    position: fixed;
+    margin-top: 1.5%;
+    max-width: 84.5vw;
+    width: 100%;
+    height: fit-content;
     display: flex;
-    margin-left: 7.7vw;
-    margin-right: 7.7vw;
-    height: 13.8vh;
-    width: 84.6%;
-
+    flex-direction: column;
+    z-index: 1000;
 }
-
+.navbar-containerFirstPart {
+    max-height: 13.8vh;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.navBar-extraContent{
+    height:  61vh;
+    background-color: white;
+    width: 100.08%;
+    display: flex;
+    justify-content: center;
+    // position: absolute;
+    // top: 500px;
+}
+.hiddenExtraContentNavBar{
+    visibility: hidden;
+}
 .nav-leftContent {
+    // border: solid 1px black;
     display: flex;
     align-items: center;
-    margin-left:3vw;
- 
-   div{
-    .list-itemNB{
-        text-decoration: none;
-        color: white;
-        margin: 5px;
-        font-family: $Moneta-Regular;
+    margin-left: 3.5vw;
+    padding-top: 5px;
+    width:40%;
+    
+    .nav-firstPagesToSelect{
+        display: flex;
+
     }
-   }
+    .list-itemNB {
+        margin-right: 15.5px;
+        text-decoration: none;
+        font-family: $Lato-Regular;
+        font-size: 14px;
+       
+        &.transparent {
+            color: white;
+            
+        }
+        &.colored {
+            color:$carmin;
+        }
+        &:hover {
+            cursor: pointer; // Cambia el cursor a pointer en hover
+        }
+    }
 }
+.triangle-navBar {
 
+}
 .nav-logo {
-    display: flex;
-    align-items: center;
-    // margin-left: 250px;
+    max-width: 20%;
+    width:20%;
+    max-height: 100%;
+    height: 100%;
+    // border: solid 1px black;
+    a{ 
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        margin-left: 65px;
+        max-height: 100%;
+        height: 100%;
+        width: 100%;
+        .logo-grazziNB{
+        max-width: 100%;
+        max-height: 100%;
+        width:24%;
+        ;
+    }}
 }
-
 .nav-rightContent {
     display: flex;
+    width:40%;
     align-items: center;
     flex-direction: row;
+    justify-content: flex-end;
+    .list-itemNB {
+        margin-right: 15.5px;
+        text-decoration: none;
+        font-family: $Lato-Regular;
+        font-size: 14px;
+        &.transparent {
+            color: white;
+        }
+        &.colored {
+            color:$carmin;
+        }
+    }
 }
-
-.transparent {
-    background-color: transparent;
-    ;
-}
-
 /* Estilos específicos para el fondo coloreado */
 .colored {
-    background-color: $carmin;
+    background-color: white;
+    color: black;
     /* Reemplaza 'yourColor' con el color deseado */
 }
-
-ul {
-    display: flex;
-    list-style: none;
+.navBarLink-subMenu{
+    color: $carmin;
+    text-decoration: none;
+    font-family: $Lato-Regular;
+    // font-size: 14px;
 }

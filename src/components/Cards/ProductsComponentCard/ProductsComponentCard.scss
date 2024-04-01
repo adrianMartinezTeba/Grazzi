@@ -1,0 +1,31 @@
+@import '../../../scss/colors.scss';
+@import '../../../scss/typography/moneta/typographyMoneta.scss';
+@import '../../../scss/typography/lato/typographyLato.scss';
+
+.productsComponentCard-container {
+    //mirar de meter el grid para columnas en caso de 1 luego
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    .productsComponentCard-Category {
+        margin-top: 25vh;
+        align-self: center;
+        color: $carmin;
+        font-family: $Moneta-Bold;
+        font-size: 2.2vw
+    }
+
+    .productsComponentCard-filter {}
+
+    .productsComponentCard-products {
+        // border: 1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        align-self: center;
+        width: 80%;
+    }
+
+}
+

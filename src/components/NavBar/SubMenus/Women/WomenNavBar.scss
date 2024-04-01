@@ -1,0 +1,61 @@
+@import '../../../../scss/colors.scss';
+@import '../../../../scss/typography/moneta/typographyMoneta.scss';
+@import '../../../../scss/typography/lato/typographyLato.scss';
+.womenNavBar-container{
+    display: flex;
+    justify-content: center;
+    width:90%;
+    height: 100%;
+}
+.womenNavBar-firstPart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 15%;
+    .womenNavBar-text{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom:30%;
+        h4{
+            font-family: $Lato-Black;
+            color: $carmin;
+            margin-bottom:12%;
+        }
+        .navBarLink-subMenuWomen{
+            font-family: $Lato-Light;
+            color: $carmin;
+            margin-bottom:10%;
+            text-decoration: none;
+        }
+       
+
+    }
+}
+.womenNavBar-secondPart{
+    display: flex;
+    width: 85%;
+    
+}
+.womenNavBar-card{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    h3{
+        font-family: $Moneta-Black;
+        font-size: 22px;
+        // border: 1px solid black;
+        margin-bottom: 5%;
+        color: $carmin;
+    }  
+}
+@media screen and (max-width: 800px) {
+    .womenNavBar-card{
+        display: none;
+    }
+}
