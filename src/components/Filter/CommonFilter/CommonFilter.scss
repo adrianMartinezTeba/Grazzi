@@ -272,7 +272,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     height: 5px;
 }
 input[type="range"]::-moz-range-track {
-    -webkit-appearance: none;
+    -moz-appearance: none;
     height: 5px;
 }
 input[type="range"]::-ms-track {
@@ -312,7 +312,4 @@ input[type="range"]::-ms-thumb {
 input[type="range"]:active::-webkit-slider-thumb {
     background-color: #fff;
     border: 2px solid $carmin;
-}
-.input__range__values{
-    // border: 1px solid black;
 }
