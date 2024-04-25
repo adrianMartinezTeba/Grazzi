@@ -1,8 +1,9 @@
 import React from 'react'
 import accesorio1 from '../../../../../assets/imgAccesorios/accesorio1.jpg'
 import accesorio2 from '../../../../../assets/imgAccesorios/accesorio2.jpg'
-import ProductGeneralCard from '../../../../Cards/ProductsComponentCard/ProductsComponentCard.jsx'
-import FilterTopsWomen from './FilterTopsWomen/FilterTopsWomen.jsx'
+import ProductsGeneralCard from '../../../../Cards/ProductsGeneralCard/ProductsGeneralCard.jsx'
+
+import CommonFilter from '../../../../Filter/CommonFilter/CommonFilter.jsx'
 const TopsWomen = () => {
   const category = 'TOPS'
   const tops = [
@@ -40,7 +41,7 @@ const TopsWomen = () => {
   return (
     <div>
       <div className='accesories-container'>
-        <ProductGeneralCard products={tops} category={category} filter={<FilterTopsWomen/>} />
+        <ProductsGeneralCard products={tops} category={category} filter={<CommonFilter/>} />
       </div>
     </div>
   )

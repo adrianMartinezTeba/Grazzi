@@ -12,9 +12,10 @@ import JeansMen from "./components/Pages/Clothes/Men/JeansMen/JeansMen";
 import Shirts from "./components/Pages/Clothes/Unisex/Shirts/Shirts";
 import Hoodies from "./components/Pages/Clothes/Unisex/Hoodies/Hoodies";
 import Proximamente from "./components/Pages/Proximamente/Proximamente";
+import NavBar from "./components/NavBar/NavBar";
 
 function App() {
-  const [proximamente, setProximamente] = useState(true); // Variable de estado para el modo "Próximamente"
+  const [proximamente, setProximamente] = useState(false); // Variable de estado para el modo "Próximamente"
   // useEffect(() => {
 
   // }, [proximamente])
@@ -23,6 +24,7 @@ function App() {
     <div className="app-container">
       <BrowserRouter>
         <div className="main-container">
+          <NavBar />
           <Routes>
             {!proximamente && (
               <>
@@ -39,6 +41,7 @@ function App() {
             )}
             <Route path="/*" element={<Proximamente />} />
           </Routes>
+          <Footer />
         </div>
       </BrowserRouter>
     </div>

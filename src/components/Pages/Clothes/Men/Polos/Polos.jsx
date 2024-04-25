@@ -1,10 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import accesorio1 from '../../../../../assets/imgAccesorios/accesorio1.jpg'
 import accesorio2 from '../../../../../assets/imgAccesorios/accesorio2.jpg'
-import ProductGeneralCard from '../../../../Cards/ProductsComponentCard/ProductsComponentCard.jsx'
-import FilterPolos from './FilterPolos/FilterPolos.jsx'
+import ProductsGeneralCard from '../../../../Cards/ProductsGeneralCard/ProductsGeneralCard.jsx'
+import CommonFilter from '../../../../Filter/CommonFilter/CommonFilter.jsx'
+import NavBar from '../../../../NavBar/NavBar.jsx'
+import './Polos.scss'
+import { useSelector, useDispatch } from 'react-redux';
+import { getProducts } from '../../../../../features/product/productSlice.js'
 const Polos = () => {
   const category = 'POLOS'
+  const dispatch = useDispatch();
+  const { products } = useSelector((state) => state.product);
+  useEffect(() => {
+    dispatch(getProducts())
+  }, [])
+  useEffect(() => {
+
+  }, [products])
   const polos = [
     {
       name: 'Gorra de algodón con bordado',
@@ -38,10 +50,16 @@ const Polos = () => {
     }
   ]
   return (
-    <div>
-            <div className='accesories-container'>
-        <ProductGeneralCard products={polos} category={category} filter={<FilterPolos />} />
-      </div>
+    <div className='polos-container'>
+      <NavBar />
+      
+      {
+        products ?
+          (
+            <ProductsGeneralCard products={products} category={category} filter={<CommonFilter />} />
+          ) : null
+      }
+   
     </div>
   )
 }

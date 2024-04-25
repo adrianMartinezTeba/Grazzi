@@ -3,13 +3,16 @@
 @import '../../scss/typography/moneta/typographyMoneta.scss';
 .navbar-container {
     position: fixed;
-    margin-top: 1.5%;
+    padding-top: 1.5%;
     max-width: 84.5vw;
     width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: column;
     z-index: 1000;
+}
+.navbar-container .colored {
+    background-color: white;
 }
 .navbar-containerFirstPart {
     max-height: 13.8vh;
@@ -28,9 +31,9 @@
     // position: absolute;
     // top: 500px;
 }
-.hiddenExtraContentNavBar{
-    visibility: hidden;
-}
+// .hiddenExtraContentNavBar{
+//     visibility: hidden;
+// }
 .nav-leftContent {
     // border: solid 1px black;
     display: flex;
@@ -55,20 +58,20 @@
         }
         &.colored {
             color:$carmin;
+            background-color: transparent;
         }
         &:hover {
             cursor: pointer; // Cambia el cursor a pointer en hover
         }
     }
 }
-.triangle-navBar {
-
-}
 .nav-logo {
-    max-width: 20%;
-    width:20%;
-    max-height: 100%;
-    height: 100%;
+    max-width: 30%;
+    width:25%;
+    // max-height: 100%;
+    height: 10%;
+    margin-left: 5%;
+   margin-bottom: 1%;
     // border: solid 1px black;
     a{ 
         display: flex;
@@ -83,7 +86,8 @@
         max-height: 100%;
         width:24%;
         ;
-    }}
+    }
+}
 }
 .nav-rightContent {
     display: flex;
@@ -91,11 +95,12 @@
     align-items: center;
     flex-direction: row;
     justify-content: flex-end;
+    margin-right: 3%;
     .list-itemNB {
         margin-right: 15.5px;
         text-decoration: none;
         font-family: $Lato-Regular;
-        font-size: 14px;
+        font-size: 140%;
         &.transparent {
             color: white;
         }

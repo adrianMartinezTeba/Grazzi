@@ -3,14 +3,10 @@ import { FaInstagram, FaTiktok, FaFacebook, FaPinterest } from "react-icons/fa";
 import { IoIosArrowUp } from "react-icons/io";
 import './Footer.scss';
 const Footer = () => {
-useEffect(() => {
-  console.log('footer');
-},[])
   const goNavBar = () => {
     console.log('goNavBar');
-    window.scrollY = (0, 0);
+    window.scrollTo(0, 0);
   };
-
   return (
     <div className='footer-container'>
       <hr className='footer-hr1'/>

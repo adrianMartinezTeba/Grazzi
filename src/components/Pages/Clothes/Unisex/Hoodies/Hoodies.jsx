@@ -1,8 +1,9 @@
 import React from 'react'
 import accesorio1 from '../../../../../assets/imgAccesorios/accesorio1.jpg'
 import accesorio2 from '../../../../../assets/imgAccesorios/accesorio2.jpg'
-import ProductGeneralCard from '../../../../Cards/ProductsComponentCard/ProductsComponentCard.jsx'
-import FilterHoodies from './FilterHoodies/FilterHoodies.jsx'
+import ProductsGeneralCard from '../../../../Cards/ProductsGeneralCard/ProductsGeneralCard.jsx'
+import CommonFilter from '../../../../Filter/CommonFilter/CommonFilter.jsx'
+
 const Hoodies = () => {
   const category = 'SUDADERAS'
   const hoodies = [
@@ -40,7 +41,7 @@ const Hoodies = () => {
   return (
     <div>
       <div className='accesories-container'>
-        <ProductGeneralCard products={hoodies} category={category} filter={<FilterHoodies />} />
+        <ProductsGeneralCard products={hoodies} category={category} filter={<CommonFilter />} />
       </div>
     </div>
   )

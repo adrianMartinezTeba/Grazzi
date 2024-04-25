@@ -1,0 +1,318 @@
+@import '../../../scss/colors.scss';
+@import '../../../scss/typography/moneta/typographyMoneta.scss';
+@import '../../../scss/typography/lato/typographyLato.scss';
+
+.filterInputs-container {
+    margin-top: 5%;
+
+}
+
+.filter_inputCheckbox {
+    -webkit-appearance: none;
+    /* Para navegadores basados en WebKit (Safari, Chrome, etc.) */
+    -moz-appearance: none;
+    /* Para navegadores basados en Gecko (Firefox) */
+    appearance: none;
+    /* Para otros navegadores */
+    width: 15px;
+    /* Ancho del checkbox */
+    height: 15px;
+    /* Alto del checkbox */
+    border: 2px solid $carmin;
+    /* Borde del checkbox */
+    background-color: #fff;
+    /* Color de fondo del checkbox */
+    margin-right: 5px;
+    /* Espacio entre el checkbox y el texto */
+
+    &:checked {
+        background-color: $carmin;
+    }
+}
+
+.filter_inputRadio {
+    -webkit-appearance: none;
+    /* Para navegadores basados en WebKit (Safari, Chrome, etc.) */
+    -moz-appearance: none;
+    /* Para navegadores basados en Gecko (Firefox) */
+    appearance: none;
+    /* Para otros navegadores */
+    width: 13px;
+    /* Ancho del radio */
+    height: 13px;
+    /* Alto del radio */
+    border: 2px solid $carmin;
+    /* Borde carmín del radio */
+    border-radius: 50%;
+    /* Asegura que el radio tenga forma redonda */
+    background-color: #fff;
+    /* Color de fondo del radio */
+    margin-right: 5px;
+
+    /* Espacio entre el radio y el texto */
+    &:checked {
+        border-color: $carmin;
+        /* Cambiar el color del borde cuando está marcado */
+        background-color: $carmin;
+        /* Cambiar el color de fondo cuando está marcado */
+        background-clip: content-box;
+        /* Asegura que el color de fondo no se extienda más allá del borde */
+        padding: 1.5px;
+        /* Espacio entre el borde y el contenido del radio */
+    }
+}
+
+// .filter_inputRange {
+//     -webkit-appearance: none;
+//     /* Para navegadores basados en WebKit (Safari, Chrome, etc.) */
+//     -moz-appearance: none;
+//     /* Para navegadores basados en Gecko (Firefox) */
+//     appearance: none;
+//     /* Para otros navegadores */
+//     accent-color: $carmin;
+//     // border: 2px solid $carmin;
+//     background-color: $carmin;
+//     height: 0.25vh;
+//     width: 20%;
+//     // &:first-of-type{
+
+
+//     // }
+//     // &:last-of-type{
+
+//     // }
+// }
+
+.commonFilter-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    // background-color: blueviolet;
+    height: fit-content;
+    color: $carmin;
+}
+
+.commonFilter-title {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 7%;
+
+    p {
+        font-family: $Lato-Regular;
+        margin-right: 1%;
+        width: 100%;
+        font-size: 120%;
+    }
+
+    .commonFilter-icon {
+
+        font-size: 1.5vw;
+    }
+
+}
+
+.commonFilter-mainContainer {
+    background-color: white;
+    display: flex;
+}
+
+.commonFilter-valuesContainer {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 11%;
+    width: 70%;
+    height: 50vh;
+}
+
+.filterButton {
+    width: 20%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    button {
+        border: none;
+        margin-top: 100%;
+        color:white;
+        background-color:$carmin;
+        font-size: 130%;
+        font-family: $Moneta-Bold;
+        width:fit-content;
+        height: 10%;
+    }
+}
+
+.sizesFilter-container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    font-family: $Lato-Regular;
+
+    h3 {
+        font-family: $Lato-Black;
+        font-size: 130%;
+
+    }
+
+    label {
+        margin: 0 0 0 4%;
+        font-size: 100%;
+    }
+}
+
+
+.colorsFilter-container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    font-family: $Lato-Regular;
+
+    h3 {
+        font-family: $Lato-Black;
+        font-size: 130%;
+    }
+
+    .colorsFilter-colors {
+        margin-top: 5%;
+    }
+
+    label {
+        margin: 0 0 0 4%;
+        font-size: 100%;
+    }
+}
+
+.pricesFilter-container {
+    width: 40%;
+    margin-top: 3%;
+
+    h3 {
+        font-family: $Lato-Black;
+        font-size: 130%;
+    }
+
+    font-family: $Lato-Regular;
+}
+
+.pricesFilter-containerpt1 {
+    width: 100%;
+    font-family: $Lato-Regular;
+
+    .pricesFilter_inputRadio__div {
+        display: flex;
+        align-items: center;
+        margin-top: 4%;
+    }
+
+    h3 {
+        font-family: $Lato-Black;
+    }
+}
+
+.pricesFilter-containerpt2 {
+    // border: 1px solid black;
+    position: relative;
+    width: 50%;
+    height:30%;
+    margin-top: 20%;
+    font-family: $Lato-Regular;
+
+    h3 {
+        font-family: $Lato-Black;
+    }
+
+    span {
+        width: 8%;
+
+        &:last-of-type {
+            margin-left: 3.5%;
+        }
+    }
+
+    // .pricesFilter-inputRange {
+    //     display: flex;
+    //     align-items: center;
+    //     margin-top: 2%;
+    // }
+
+
+}
+
+//prueba barra
+input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    outline: none;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    pointer-events: none;
+}
+.slider__track {
+width: 100%;
+height: 5px;
+// background-color: aqua;
+position: absolute;
+margin: auto;
+top:0;
+bottom: 0;
+border-radius: 5px;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    height: 5px;
+}
+input[type="range"]::-moz-range-track {
+    -webkit-appearance: none;
+    height: 5px;
+}
+input[type="range"]::-ms-track {
+    appearance: none;
+    height: 5px;
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    background-color: $carmin;
+    cursor: pointer;
+    border-radius: 50%;
+    pointer-events: auto;
+    margin-top: -2%;
+}
+input[type="range"]::-moz-range-thumb {
+    -moz-appearance: none;
+    height: 15px;
+    width: 15px;
+    background-color: $carmin;
+    cursor: pointer;
+    border-radius: 50%;
+    pointer-events: auto;
+    margin-top: -2%;
+}
+input[type="range"]::-ms-thumb {
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    background-color: $carmin;
+    cursor: pointer;
+    border-radius: 50%;
+    pointer-events: auto;
+    margin-top: -2%;
+}
+input[type="range"]:active::-webkit-slider-thumb {
+    background-color: #fff;
+    border: 2px solid $carmin;
+}
+.input__range__values{
+    // border: 1px solid black;
+}

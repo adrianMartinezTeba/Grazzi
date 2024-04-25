@@ -1,8 +1,10 @@
 import React from 'react'
 import accesorio1 from '../../../../../assets/imgAccesorios/accesorio1.jpg'
 import accesorio2 from '../../../../../assets/imgAccesorios/accesorio2.jpg'
-import ProductGeneralCard from '../../../../Cards/ProductsComponentCard/ProductsComponentCard.jsx'
-import FilterJeansMen from './FilterJeansMen/FilterJeansMen.jsx'
+import ProductsGeneralCard from '../../../../Cards/ProductsGeneralCard/ProductsGeneralCard.jsx'
+import CommonFilter from '../../../../Filter/CommonFilter/CommonFilter.jsx'
+import NavBar from '../../../../NavBar/NavBar.jsx'
+
 const JeansMen = () => {
   const category = 'JEANS'
   const jeansMen = [
@@ -38,10 +40,10 @@ const JeansMen = () => {
     }
   ]
   return (
-    <div>
-        <div className='accesories-container'>
-        <ProductGeneralCard products={jeansMen} category={category} filter={<FilterJeansMen/>} />
-      </div>
+    <div className='jeansMen-container'>
+       <NavBar />
+        <ProductsGeneralCard products={jeansMen} category={category} filter={<CommonFilter/>} />
+     
     </div>
   )
 }

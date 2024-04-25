@@ -7,22 +7,28 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: solid 1px black;
+    // border: solid 1px black;
     height: 56vh;
     width: 100%;
-    .footer-hr1 {
-        background-color: $carmin;
-        height: 0.5%;
-        width: 92%;
-    }
 
-    .footer-hr2 {
-        background-color: $carmin;
-        height: 0.2%;
-        width: 92%;
-    }
+}
+.footer-hr1 {
+    padding-top: 0.1%;
+    margin-top: 3%;
+    background-color: $carmin;
+
+
+    width: 92%;
 }
 
+.footer-hr2 {
+    padding-top: 0.1%;
+    margin-top: 1%;
+    background-color: $carmin;
+
+
+    width: 92%;
+}
 .footer-text {
     padding-top: 3%;
     display: flex;
@@ -32,7 +38,7 @@
     color: $carmin;
     height: 60%;
     h2 {
-        font-size:  160%;
+        font-size:  170%;
         font-family: $Moneta-Bold;
     }
     p {
@@ -43,7 +49,7 @@
     .footer-textList1 {
         width: 100%;
         height: 100%;
-        border: solid 1px black;
+        // border: solid 1px black;
         display: flex;
         flex-direction: column;
         font: size 120%;
@@ -51,7 +57,7 @@
     .footer-textList2 {
         width: 100%;
         height: 100%;
-        border: solid 1px black;
+        // border: solid 1px black;
         display: flex;
         flex-direction: column;
         font: size 120%;
@@ -60,7 +66,7 @@
     .footer-textList3 {
         width: 100%;
         height: 100%;
-        border: solid 1px black;
+        // border: solid 1px black;
         display: flex;
         flex-direction: column;
         font: size 120%;
@@ -68,7 +74,7 @@
     .footer-textList4 {
         width: 100%;
         height: 100%;
-        border: solid 1px black;
+        // border: solid 1px black;
         display: flex;
         flex-direction: column;
         font: size 120%;
@@ -77,18 +83,18 @@
 .footer-arrow{
     height: 10%;
     width: 100%;
-    border: solid 1px black;
+    // border: solid 1px black;
     background-color: $carmin;
 
 }
-.footer-arrow:hover {
-    background-color:white;
-}
+// .footer-arrow:hover {
+//     background-color:white;
+// }
 .footer-arrowUp {
     border-radius: 50%;
     background-color: $carmin;
-    width: 10%;
-    height: 100%;
+    width:8%;
+
     display: flex;
     justify-content: center;
     align-items: center;

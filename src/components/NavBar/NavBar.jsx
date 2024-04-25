@@ -28,7 +28,7 @@ const NavBar = () => {
     };
     
     return (
-        <div className="navbar-container" onMouseLeave={() => handleHover(null)} >
+        <div className={`navbar-container ${navColor}`} onMouseLeave={() => handleHover(null)} >
             <div className="navbar-containerFirstPart" >
                 <div className='nav-leftContent'>
                     <div className='nav-firstPagesToSelect'>

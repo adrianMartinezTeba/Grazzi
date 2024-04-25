@@ -31,7 +31,7 @@ const WomenNavBar = () => {
         </Link>
         <Link to="/women/jeans"  className='womenNavBar-card'>
           <h3>JEANS</h3>
-          <img className='img-navBar' src={navBarMJeans} alt="" />
+          <img className='img-navBar' src={navBarMJeans} alt="no sale" />
         </Link>
       </div>
     </div>
