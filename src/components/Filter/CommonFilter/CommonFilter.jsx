@@ -166,7 +166,6 @@ const CommonFilter = () => {
                                     <div className="slider__track"></div>
                                     <input type="range" min="0" max="100" value={sliderOne} onChange={(e) => slideOne(parseInt(e.target.value))} className='slider__1' id='slider__1' />
                                     <input type="range" min="0" max="100" value={sliderTwo} onChange={(e) => slideTwo(parseInt(e.target.value))} className='slider__2' id='slider__2' />
-
                                 </div>
                             </div>
                         </div>

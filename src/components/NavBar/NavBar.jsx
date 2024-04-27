@@ -49,7 +49,7 @@ const NavBar = () => {
                         <Link className={`list-itemNB ${navColor}`} to=''><IoIosSearch /></Link>
                     </div>
                     <div>
-                        <Link className={`list-itemNB ${navColor}`} to=''><CiUser /></Link>
+                        <Link className={`list-itemNB ${navColor}`} to='/login'><CiUser /></Link>
                     </div>
                     <div>
                         <Link className={`list-itemNB ${navColor}`} to=''><PiHandbagThin /></Link>

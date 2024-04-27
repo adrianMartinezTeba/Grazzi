@@ -272,7 +272,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     height: 5px;
 }
 input[type="range"]::-moz-range-track {
-    -moz-appearance: none;
+    --appearance: none;
     height: 5px;
 }
 input[type="range"]::-ms-track {
