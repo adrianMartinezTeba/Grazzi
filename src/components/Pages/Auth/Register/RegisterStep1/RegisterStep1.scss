@@ -1,0 +1,258 @@
+@import '../../../../../scss/colors.scss';
+@import '../../../../../scss/typography/moneta/typographyMoneta.scss';
+@import '../../../../../scss/typography/lato/typographyLato.scss';
+
+.registerStep1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+    padding-top: 12%;
+
+    &__heading {
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+        color: $carmin;
+        font-family: $Moneta-Regular;
+        font-size: 200%;
+    }
+
+    &__form {
+        display: flex;
+        width: 25%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 4% 0% 5% 0%;
+
+        .form {
+            &__div {
+                // Otros estilos omitidos por brevedad
+                &--emailContainer {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .input {
+                        &.emailInput {
+                            border: 2px solid $carmin;
+                            width: 100%;
+                            font-family: $Lato-Regular;
+                            font-size: 100%;
+                            padding: 3%;
+                            color: $carmin;
+                            background-color: white;
+
+                            &::placeholder {
+                                color: $carmin;
+                                font-family: $Lato-Regular;
+                                padding-left: 3%;
+                            }
+
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+                    }
+                }
+
+                &--passwordContainer {
+                    position: relative;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 8%;
+
+                    .input {
+                        &.passwordInput {
+                            border: 2px solid $carmin;
+                            width: 100%;
+                            font-family: $Lato-Regular;
+                            font-size: 100%;
+                            padding: 3%;
+                            color: $carmin;
+
+                            &::placeholder {
+                                color: $carmin;
+                                font-family: $Lato-Regular;
+                                padding-left: 3%;
+                            }
+
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+                    }
+
+                    .passwordIcon {
+                        color: $carmin;
+                        position: absolute;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 130%;
+                        right: 5%;
+                    }
+                }
+
+                &--mobileContainer {
+                    width: 100%;
+                    margin-top: 8%;
+                    height: 100%;
+
+                    .PhoneInput {
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        position: relative;
+
+                        .PhoneInputInput {
+                            width: 100%;
+                            border: 2px solid $carmin;
+                            padding: 3%;
+                            font-family: $Lato-Regular;
+                            font-size: 100%;
+                            padding-left: 18%;
+                            color: $carmin;
+                            background-color: white;
+
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+
+                        .PhoneInputCountry {
+                            position: absolute;
+                            width: 15%; // Ajusta el tamaño de la bandera
+                            height: 100%; // Altura automática
+                            display: flex;
+                            // border: 2px solid $carmin;
+
+                            .PhoneInputCountryIcon {
+                                // display: none;
+                                display: flex;
+                                background-color: antiquewhite;
+                                position: absolute;
+                                border: 1px solid $carmin;
+                                width:fit-content; // Tamaño de la bandera
+                                height: 60%;
+                                margin-left: 15%;
+                                margin-top: 15%;
+                                // Altura automática para mantener la proporción
+                                pointer-events: none; // Evita que la bandera sea clickeable
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+
+                            .PhoneInputCountrySelect {
+                                display: none;
+                                border: 2px solid $carmin;
+                                display: flex;
+                                margin-top: 18%;
+                                margin-left: 15%;
+                                position: absolute;
+                                width: 70%; // Tamaño de la bandera
+                                height: 60%; // Altura automática para mantener la proporción
+
+
+                            }
+
+
+                        }
+                    }
+                }
+
+                &--spamContainer {
+                    color: $carmin;
+  
+                    width: 100%;
+                    //  height: 20%;
+                    display: flex;
+                    //  justify-content: center;
+                    align-items: center;
+                    margin-top: 4%;
+                    padding: 2% 0% 2% 0%;
+                    .input {
+                        &.checkbox {
+                            // Estilos para el checkbox
+                            --webkit-appearance: none;
+                            appearance: none;
+                            border: 2px solid $carmin;
+                            width: 5%;
+                            height: 50%;
+                            &:checked {
+                                background-color: $carmin;
+                            }
+                        }
+
+                        &.checkbox--label {
+                            // Estilos para la etiqueta del checkbox
+                            margin-left: 2%;
+                            font-family: $Lato-Regular;
+                            font-size: 80%;
+                        }
+                    }
+                }
+                &--buttonContainer {
+                    width: 100%;
+                    margin-top: 4%;
+
+                    .button {
+                        border: none;
+                        width: 100%;
+                        padding: 3%;
+                        background-color: $carmin;
+                        color: white;
+                        font-family: $Lato-Regular;
+                        font-size: 100%;
+                        cursor: pointer;
+                    }
+                }
+
+                &--linkLogin {
+                    width: 100%;
+                    margin-top: 2%;
+
+                    p {
+                        font-family: $Lato-Regular;
+                        font-size: 80%;
+                        color: $carmin;
+
+                        a {
+                            color: $carmin;
+                            // text-decoration: none;s
+                        }
+                    }
+                }
+
+                &--policy {
+                    width: 100%;
+                    margin-top: 10%;
+
+                    p {
+                        font-family: $Lato-Regular;
+                        font-size: 80%;
+                        color: $carmin;
+
+                        a {
+                            color: $carmin;
+                            // text-decoration: none;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

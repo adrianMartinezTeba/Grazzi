@@ -12,98 +12,50 @@
     width: 100%;
     height: fit-content;
     padding-top: 12%;
-    // padding-bottom: 10%;
-}
-
-.login__title {
-    width: 100%;
-    height: fit-content;
-    text-align: center;
-    // border: 1px solid black;
-    color: $carmin;
-    font-family: $Moneta-Regular;
-    font-size: 200%;
-    // font-weight: 200px;
-}
-
-.login__form {
-    // border: 1px solid black;
-    display: flex;
-    width: 25%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 4% 0% 5% 0%;
-    // div{
-    //     border: 1px solid black;
-    //     width: calc(100% / 4);
-    //     display: flex;
-    //     height: 100%;
-    //     flex-direction: column;
-    //     justify-content: center;
-    //     align-items: center;
-    //     padding-top: 2%;
-    // }
-}
-
-.login__form__emailContainer {
-    // border: 1px solid black;
-    width: 100%;
-    // height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-input[type="email"] {
-    border: 2px solid $carmin;
-    width: 100%;
-    // height:160%;
-    font-family: $Lato-Regular;
-    font-size: 100%;
-    padding: 3%;
-    color: $carmin;
-
-    /* Asegurar que el texto sea carmín */
-    &::placeholder {
-        color: $carmin;
+    input[type="checkbox"] {
+        --webkit-appearance: none;
+         appearance: none;
+         border: 2px solid $carmin;
+         width: 5%;
+         height: 95%;
+         &:checked {
+             background-color: $carmin;
+         }
+     }
+     input[type="email"] {
+        border: 2px solid $carmin;
+        width: 100%;
+        // height:160%;
         font-family: $Lato-Regular;
-        padding-left: 3%;
-    }
-
-    &:focus {
-        outline: none;
-    }
-
-    &:-webkit-autofill {
-        /* Estilo específico para valores autocompletados */
-        color: transparent;
-        /* Hacer el texto transparente */
-        transition: background-color 5000s ease-in-out;
-        /* Asegurar que el color se mantenga */
-    }
-
-    &:-webkit-autofill::first-line {
+        font-size: 100%;
+        padding: 3%;
         color: $carmin;
-        /* Restaurar el color del texto */
+    
+        /* Asegurar que el texto sea carmín */
+        &::placeholder {
+            color: $carmin;
+            font-family: $Lato-Regular;
+            padding-left: 3%;
+        }
+    
+        &:focus {
+            outline: none;
+        }
+    
+        &:-webkit-autofill {
+            /* Estilo específico para valores autocompletados */
+            color: transparent;
+            /* Hacer el texto transparente */
+            transition: background-color 5000s ease-in-out;
+            /* Asegurar que el color se mantenga */
+        }
+    
+        &:-webkit-autofill::first-line {
+            color: $carmin;
+            /* Restaurar el color del texto */
+        }
     }
-}
-
-.login__form__passwordContainer {
-    position: relative;
-    // border: 1px solid black;
-    width: 100%;
-    // height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 8%;
-
-}
-
-input[type="password"],
+    input[type="password"],
 input[type="text"] {
     border: 2px solid $carmin;
     width: 100%;
@@ -137,6 +89,51 @@ input[type="text"] {
         /* Restaurar el color del texto */
     }
 }
+}
+
+.login__title {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    // border: 1px solid black;
+    color: $carmin;
+    font-family: $Moneta-Regular;
+    font-size: 200%;
+    // font-weight: 200px;
+}
+
+.login__form {
+    // border: 1px solid black;
+    display: flex;
+    width: 25%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4% 0% 5% 0%;
+}
+
+.login__form__emailContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.login__form__passwordContainer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+
+}
+
+
 
 .login__passwordIcon {
     color: $carmin;
@@ -165,16 +162,7 @@ input[type="text"] {
         font-size: 80%;
     }
 }
-input[type="checkbox"] {
-   --webkit-appearance: none;
-    appearance: none;
-    border: 2px solid $carmin;
-    width: 5%;
-    height: 95%;
-    &:checked {
-        background-color: $carmin;
-    }
-}
+
 .login__form__buttonContainer {
     // border: 1px solid black;
     width: 100%;

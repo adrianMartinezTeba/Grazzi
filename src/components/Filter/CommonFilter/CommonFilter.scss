@@ -62,27 +62,6 @@
     }
 }
 
-// .filter_inputRange {
-//     -webkit-appearance: none;
-//     /* Para navegadores basados en WebKit (Safari, Chrome, etc.) */
-//     -moz-appearance: none;
-//     /* Para navegadores basados en Gecko (Firefox) */
-//     appearance: none;
-//     /* Para otros navegadores */
-//     accent-color: $carmin;
-//     // border: 2px solid $carmin;
-//     background-color: $carmin;
-//     height: 0.25vh;
-//     width: 20%;
-//     // &:first-of-type{
-
-
-//     // }
-//     // &:last-of-type{
-
-//     // }
-// }
-
 .commonFilter-container {
     display: flex;
     flex-direction: column;
@@ -90,6 +69,76 @@
     // background-color: blueviolet;
     height: fit-content;
     color: $carmin;
+    .slider__track {
+        width: 100%;
+        height: 5px;
+        // background-color: aqua;
+        position: absolute;
+        margin: auto;
+        top:0;
+        bottom: 0;
+        border-radius: 5px;
+    }
+    input[type="range"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 100%;
+        outline: none;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        background-color: transparent;
+        pointer-events: none;
+    }
+    input[type="range"]::-webkit-slider-runnable-track {
+        -webkit-appearance: none;
+        height: 5px;
+    }
+    input[type="range"]::-moz-range-track {
+        --appearance: none;
+        height: 5px;
+    }
+    input[type="range"]::-ms-track {
+        appearance: none;
+        height: 5px;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 15px;
+        width: 15px;
+        background-color: $carmin;
+        cursor: pointer;
+        border-radius: 50%;
+        pointer-events: auto;
+        margin-top: -2%;
+    }
+    input[type="range"]::-moz-range-thumb {
+        -moz-appearance: none;
+        height: 15px;
+        width: 15px;
+        background-color: $carmin;
+        cursor: pointer;
+        border-radius: 50%;
+        pointer-events: auto;
+        margin-top: -2%;
+    }
+    input[type="range"]::-ms-thumb {
+        appearance: none;
+        height: 15px;
+        width: 15px;
+        background-color: $carmin;
+        cursor: pointer;
+        border-radius: 50%;
+        pointer-events: auto;
+        margin-top: -2%;
+    }
+    input[type="range"]:active::-webkit-slider-thumb {
+        background-color: #fff;
+        border: 2px solid $carmin;
+    }
+    
 }
 
 .commonFilter-title {
@@ -98,17 +147,17 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 7%;
-
+    margin-left: 5.5%;
     p {
         font-family: $Lato-Regular;
         margin-right: 1%;
         width: 100%;
-        font-size: 120%;
+        font-size: 100%;
     }
-
     .commonFilter-icon {
-
+        display: flex;
+        margin-top: 2%;
+        width: 1.5vw;
         font-size: 1.5vw;
     }
 
@@ -233,83 +282,4 @@
             margin-left: 3.5%;
         }
     }
-
-    // .pricesFilter-inputRange {
-    //     display: flex;
-    //     align-items: center;
-    //     margin-top: 2%;
-    // }
-
-
-}
-
-//prueba barra
-input[type="range"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    width: 100%;
-    outline: none;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    background-color: transparent;
-    pointer-events: none;
-}
-.slider__track {
-width: 100%;
-height: 5px;
-// background-color: aqua;
-position: absolute;
-margin: auto;
-top:0;
-bottom: 0;
-border-radius: 5px;
-}
-input[type="range"]::-webkit-slider-runnable-track {
-    -webkit-appearance: none;
-    height: 5px;
-}
-input[type="range"]::-moz-range-track {
-    --appearance: none;
-    height: 5px;
-}
-input[type="range"]::-ms-track {
-    appearance: none;
-    height: 5px;
-}
-input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    height: 15px;
-    width: 15px;
-    background-color: $carmin;
-    cursor: pointer;
-    border-radius: 50%;
-    pointer-events: auto;
-    margin-top: -2%;
-}
-input[type="range"]::-moz-range-thumb {
-    -moz-appearance: none;
-    height: 15px;
-    width: 15px;
-    background-color: $carmin;
-    cursor: pointer;
-    border-radius: 50%;
-    pointer-events: auto;
-    margin-top: -2%;
-}
-input[type="range"]::-ms-thumb {
-    appearance: none;
-    height: 15px;
-    width: 15px;
-    background-color: $carmin;
-    cursor: pointer;
-    border-radius: 50%;
-    pointer-events: auto;
-    margin-top: -2%;
-}
-input[type="range"]:active::-webkit-slider-thumb {
-    background-color: #fff;
-    border: 2px solid $carmin;
 }

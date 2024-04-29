@@ -1,97 +1,85 @@
 @import '../../scss/colors.scss';
 @import '../../scss/typography/lato/typographyLato.scss';
 @import '../../scss/typography/moneta/typographyMoneta.scss';
+
 .navbar-container {
+    top: 0;
     position: fixed;
-    padding-top: 1.5%;
-    max-width: 84.5vw;
-    width: 100%;
-    height: fit-content;
+    max-width: 84.5%;
+    height: auto;
     display: flex;
+    width: 100%;
     flex-direction: column;
     z-index: 1000;
+    &.colored {
+        background-color: white;
+    }
+    &.transparent {
+        background-color: transparent
+    }
 }
-.navbar-container .colored {
-    background-color: white;
-}
-.navbar-containerFirstPart {
-    max-height: 13.8vh;
+.navbar-maiContainer {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: auto;
+    max-height: 100%;
     justify-content: center;
     align-items: center;
 }
-.navBar-extraContent{
-    height:  61vh;
-    background-color: white;
-    width: 100.08%;
-    display: flex;
-    justify-content: center;
-    // position: absolute;
-    // top: 500px;
-}
-// .hiddenExtraContentNavBar{
-//     visibility: hidden;
-// }
 .nav-leftContent {
-    // border: solid 1px black;
     display: flex;
-    align-items: center;
-    margin-left: 3.5vw;
-    padding-top: 5px;
-    width:40%;
-    
-    .nav-firstPagesToSelect{
-        display: flex;
+    justify-content: center;
+    height: auto;
+    width: fit-content;
+    margin-left: 6%;
 
-    }
     .list-itemNB {
-        margin-right: 15.5px;
-        text-decoration: none;
+        display: flex;
+        margin-right:3%;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        height: 12.5vh;
         font-family: $Lato-Regular;
-        font-size: 14px;
-       
+        text-decoration: none;
+        // padding-right: 2%;
         &.transparent {
             color: white;
-            
+
         }
         &.colored {
             color:$carmin;
-            background-color: transparent;
         }
         &:hover {
-            cursor: pointer; // Cambia el cursor a pointer en hover
+            cursor: pointer;
         }
     }
 }
 .nav-logo {
-    max-width: 30%;
-    width:25%;
-    // max-height: 100%;
-    height: 10%;
-    margin-left: 5%;
-   margin-bottom: 1%;
-    // border: solid 1px black;
-    a{ 
+    width: 20%;
+    height: 12.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding-left: 8.5%;
+
+    a {
         display: flex;
-        // justify-content: center;
+        justify-content: center;
         align-items: center;
-        margin-left: 65px;
-        max-height: 100%;
-        height: 100%;
         width: 100%;
-        .logo-grazziNB{
-        max-width: 100%;
-        max-height: 100%;
-        width:24%;
-        ;
+        height: 100%;
+        .logo-grazziNB {
+            width: 24%;
+            height: 80%;
+        }
     }
 }
-}
+
 .nav-rightContent {
     display: flex;
-    width:40%;
+    width: 40%;
+    height: 12.5vh;
     align-items: center;
     flex-direction: row;
     justify-content: flex-end;
@@ -105,19 +93,21 @@
             color: white;
         }
         &.colored {
-            color:$carmin;
+            color: $carmin;
         }
     }
 }
+
 /* Estilos específicos para el fondo coloreado */
 .colored {
     background-color: white;
     color: black;
     /* Reemplaza 'yourColor' con el color deseado */
 }
-.navBarLink-subMenu{
-    color: $carmin;
-    text-decoration: none;
-    font-family: $Lato-Regular;
-    // font-size: 14px;
+.navBar-extraContent {
+    padding: 2% 0%;
+    background-color: white;
+    width: 100.08%;
+    display: flex;
+    justify-content: center;
 }

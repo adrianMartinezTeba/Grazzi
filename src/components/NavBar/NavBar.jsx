@@ -28,25 +28,21 @@ const NavBar = () => {
     };
     
     return (
-        <div className={`navbar-container ${navColor}`} onMouseLeave={() => handleHover(null)} >
-            <div className="navbar-containerFirstPart" >
-                <div className='nav-leftContent'>
-                    <div className='nav-firstPagesToSelect'>
+        <div className={`navbar-container ${navColor} ${selectedPage ? 'extended' : ''}`} onMouseLeave={() => handleHover(null)} >
+            <div className="navbar-maiContainer" >
+                <div  className='nav-leftContent' >                   
                         <div onMouseEnter={() => handleHover('Novedades')} className={`list-itemNB ${navColor}`} to='/'>Novedades</div>
                         <div onMouseEnter={() => handleHover('Mujer')} className={`list-itemNB ${navColor}`} to='/women'>Mujer</div>
                         <div onMouseEnter={() => handleHover('Hombre')} className={`list-itemNB ${navColor}`} to=''>Hombre</div>
-                    </div>
-                    <div onMouseEnter={() => handleHover(null)} className='nav-secondPages'>
-                        <Link className={`list-itemNB ${navColor}`} to='/accesories'>Accesorios</Link>
-                        <Link className={`list-itemNB ${navColor}`} to=''>Colecciones</Link>
-                    </div>
+                        <Link onMouseEnter={() => handleHover(null)} className={`list-itemNB ${navColor}`} to='/accesories'>Accesorios</Link>
+                        <Link  onMouseEnter={() => handleHover(null)}className={`list-itemNB ${navColor}`} to=''>Colecciones</Link>
                 </div>
-                <div className='nav-logo'>
+                <div className='nav-logo' onMouseEnter={() => handleHover(null)}>
                     <Link to='/'><img src={navColor === 'colored' ? LogoGrazziCarmin : LogoGrazziBlanco} className='logo-grazziNB' alt="Logo de grazzi" /></Link>
                 </div>
-                <div className='nav-rightContent'>
+                <div onMouseEnter={() => handleHover(null)} className='nav-rightContent'>
                     <div>
-                        <Link className={`list-itemNB ${navColor}`} to=''><IoIosSearch /></Link>
+                        <div className={`list-itemNB ${navColor}`} to=''><IoIosSearch /></div>
                     </div>
                     <div>
                         <Link className={`list-itemNB ${navColor}`} to='/login'><CiUser /></Link>

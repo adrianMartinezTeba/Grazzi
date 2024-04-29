@@ -66,7 +66,7 @@ useEffect(() => {
         <div className='login__form__buttonContainer'>
           <button onClick={login} className='login__formLoginButton'>Iniciar sesión</button>
           <div className='login__formLinkRegister'>
-            <Link  to="/register">Crear cuenta</Link>
+            <Link  to="/register/firstStep">Crear cuenta</Link>
           </div>
           <div className='login__formLinkForgotPassword'>
             <Link to="/forgotPassword">¿Has olvidado tu contraseña?</Link>

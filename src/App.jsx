@@ -14,7 +14,8 @@ import Hoodies from "./components/Pages/Clothes/Unisex/Hoodies/Hoodies";
 import Proximamente from "./components/Pages/Proximamente/Proximamente";
 import NavBar from "./components/NavBar/NavBar";
 import Login from "./components/Pages/Auth/Login/Login";
-import Register from "./components/Pages/Auth/Register/Register";
+import RegisterStep1 from "./components/Pages/Auth/Register/RegisterStep1/RegisterStep1";
+import RegisterStep2 from "./components/Pages/Auth/Register/RegisterStep2/RegisterStep2";
 function App() {
   const [proximamente, setProximamente] = useState(false); // Variable de estado para el modo "Próximamente"
   // useEffect(() => {
@@ -39,7 +40,8 @@ function App() {
                 <Route path="/unisex/shirts" element={<Shirts />} />
                 <Route path="/unisex/hoodies" element={<Hoodies />} />
                 <Route path="/login" element={<Login />}/>
-                <Route path="/register" element={<Register />} />
+                <Route path="/register/firstStep" element={<RegisterStep1 />} />
+                <Route path="/register/secondStep" element={<RegisterStep2 />} />
               </>
             )}
             <Route path="/*" element={<Proximamente />} />
