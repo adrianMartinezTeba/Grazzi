@@ -1,0 +1,173 @@
+@import '../../../../../scss/colors.scss';
+@import '../../../../../scss/typography/moneta/typographyMoneta.scss';
+@import '../../../../../scss/typography/lato/typographyLato.scss';
+
+.registerStep2 {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+    padding-top: 12%;
+
+    &__heading {
+
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+        color: $carmin;
+        font-family: $Moneta-Regular;
+        font-size: 200%;
+    }
+
+    &__form {
+
+        display: flex;
+        width: 25%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 4% 0% 5% 0%;
+
+        .form {
+            &__div {
+                &--nameContainer {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center; 
+                    .input {
+                        &.nameInput {
+                            border: 2px solid $carmin;
+                            width: 100%;
+                            font-family: $Lato-Regular;
+                            font-size: 100%;
+                            padding: 3%;
+                            color: $carmin;
+                            background-color: white;
+
+                            &::placeholder {
+                                color: $carmin;
+                                font-family: $Lato-Regular;
+                                padding-left: 3%;
+                            }
+
+                            &:focus {
+                                outline: none;
+                                border-color:$carmin; ;
+                            }
+                        }
+                    } 
+                }
+                &--birthContainer {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;   
+                    margin-top: 8%;
+                    .input {
+                       
+                        &.birthInput {
+                            border: 2px solid $carmin;
+                            width: 100%;
+                            font-family: $Lato-Regular;
+                            font-size: 100%;
+                            padding: 3%;
+                            padding-left: 6%;
+                            color: $carmin;
+                            background-color: white;
+                            &::-webkit-calendar-picker-indicator {
+                                filter: invert(20%) sepia(82%) saturate(425%) hue-rotate(320deg) brightness(95%) contrast(94%);
+                            }
+                            &::placeholder {
+                                color: $carmin;
+                                font-family: $Lato-Regular;
+                                padding-left: 3%;
+                            }
+
+                            &:focus {
+                                outline: none;
+                                border-color:$carmin; ;
+                            }
+                        }
+                    }
+                }
+                &--postalCodeContainer {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;   
+                    margin-top: 8%;
+                    .input {
+                        &.postalCodeInput {
+                            border: 2px solid $carmin;
+                            width: 100%;
+                            font-family: $Lato-Regular;
+                            font-size: 100%;
+                            padding: 3%;
+                            color: $carmin;
+                            background-color: white;
+                            &::placeholder {
+                                color: $carmin;
+                                font-family: $Lato-Regular;
+                                padding-left: 3%;
+                            }
+
+                            &:focus {
+                                outline: none;
+                                border-color:$carmin; ;
+                            }
+                        }
+                    }
+                }
+                &--addressContainer {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center; 
+                    margin-top: 8%;
+                    .input {
+                        &.addressInput {
+                            border: 2px solid $carmin;
+                            width: 100%;
+                            font-family: $Lato-Regular;
+                            font-size: 100%;
+                            padding: 3%;
+                            color: $carmin;
+                            background-color: white;
+                            &::placeholder {
+                                color: $carmin;
+                                font-family: $Lato-Regular;
+                                padding-left: 3%;
+                            }
+
+                            &:focus {
+                                outline: none;
+                                border-color:$carmin; ;
+                            }
+                        }
+                    }
+                }
+                &--buttonContainer {
+                    width: 100%;
+                    margin-top: 8%;
+
+                    .button {
+                        border: none;
+                        width: 100%;
+                        padding: 3%;
+                        background-color: $carmin;
+                        color: white;
+                        font-family: $Lato-Regular;
+                        font-size: 100%;
+                        cursor: pointer;
+                    }
+                }
+
+            
+            }
+        }
+    }
+    }
